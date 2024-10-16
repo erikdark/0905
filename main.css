@@ -1,0 +1,20 @@
+.section-category {
+    width: 1110px;
+    margin: 0 auto;
+  }
+  
+  .section-category h1,p,a {
+    text-align: center;
+  }
+  .card-category {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+  }
+  .card-item img {
+    border-radius: 50%;
+  }
+  .card-item a {
+    color: #000;
+    text-decoration: none;
+  }
