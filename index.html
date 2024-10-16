@@ -14,11 +14,11 @@
         <img src="img/LOGO.svg" alt="">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -53,7 +53,7 @@
 
         <!-- SECTION ABOUT-ME -->
         <section class="about-me">
-            <div class="about-me-img">
+            <div id="about-me" class="about-me-img">
                 <img src="img/about-cris.jpg" alt="">
             </div>
             <div class="about-me-text">
@@ -94,7 +94,7 @@
         <section class="my-services">
             <h4>My Services</h4>
             <hr>
-            <div class="my-services-grid-elements">
+            <div id="service" class="my-services-grid-elements">
                 <div class="my-services-grid-element">
                     <img src="img/logo.png" alt="">
                     <b>Logo Design</b>
@@ -131,14 +131,14 @@
 
 
         <!-- SECTION PORTFOLIO -->
-        <section class="portfolio-section">
+        <section id="portfolio" class="portfolio-section">
             <h4>Portfolio</h4>
             <hr>
-            <div class="block_js_element">
+            <div class="portfolio-addon">
                 <div class="filters"> 
-                    <button class='filters-button' data-filter='all'>Показать все</button>
-                    <button class='filters-button' data-filter='websites'>Веб-сайты</button>
-                    <button class='filters-button' data-filter='web-app'>Веб-приложения</button>
+                    <a class='filters-button first-btn' data-filter='all'>Показать все</a>
+                    <a class='filters-button mid-btn' data-filter='websites'>Веб-сайты</a>
+                    <a class='filters-button last-btn' data-filter='web-app'>Веб-приложения</a>
                   </div>
                   <div class="portfolio">
                     <div class="portfolio-item" data-category="websites">Сайт-1</div>
@@ -158,7 +158,7 @@
 
 
         <!-- SECTION CONTACT-ME -->
-        <section class="contact-me">
+        <section id="contact" class="contact-me">
             <h4>Contact Me</h4>
             <hr>
             <div class="contact-me-blocks">
@@ -171,11 +171,11 @@
                     <p>Phone: <a href="tel:+8801234567890">+88 0123 456 7890</a></p>
                 </div>
                 <div class="contact-me-blocks-rigth-side">
-                    <form action="#">
-                        <input type="text" placeholder="Full Name">
-                        <input type="text" placeholder="Email Address">
-                        <input type="text" placeholder="Subject">
-                        <textarea name="" id="" placeholder="Enter Your Message"></textarea>
+                    <form action="http://test.easysmarthub.ru/main.php" method="post">
+                        <input type="text" id="name" name="name" placeholder="Full Name">
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                        <input name="header" id="header" type="text" placeholder="Subject">
+                        <textarea name="message" id="message" placeholder="Enter Your Message"></textarea>
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
@@ -205,10 +205,25 @@
     <!-- END FOOTER -->
      </div>
 
+     <script>
+        const anchors = document.querySelectorAll('a[href*="#"]')
 
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
+     </script>
 
      <script>
-        document.querySelectorAll('.filters button').forEach(button => { 
+        document.querySelectorAll('.filters a').forEach(button => { 
           button.addEventListener('click', function() {
             const filter = this.getAttribute('data-filter');
             filterItems(filter);

@@ -1,20 +1,496 @@
-.section-category {
-    width: 1110px;
+
+/* Для начала обнуляем все стили для отступов */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", system-ui;
+}
+
+.auto-mid {
+    width: 1440px;
     margin: 0 auto;
-  }
-  
-  .section-category h1,p,a {
-    text-align: center;
-  }
-  .card-category {
+}
+
+
+/* Импортирую шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Задаю шрифты для всего документа */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* СТИЛИЗУЮ HEADER */
+.header {
+    padding-top: 21px;
+    padding-bottom: 26px;
     display: flex;
-    gap: 25px;
     justify-content: space-between;
-  }
-  .card-item img {
-    border-radius: 50%;
-  }
-  .card-item a {
-    color: #000;
+    align-items: center;
+    padding-left: 110px;
+    padding-right: 110px;
+    border-bottom: 1px solid #000;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+}
+.header ul li {
+    margin-right: 23px;
+}
+
+.header ul li a {
+    padding: 4px 15px;
+    font-size: 17px;
+    font-weight: 300;
     text-decoration: none;
+    color: #000;
+}
+
+/* ЗАКОНЧИЛ СО СТИЛЯМИ HEADER */
+
+
+
+/* СТИЛИЗУЮ FIRST SECTION */
+
+.first-section {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #000;
+}
+
+.first-section .cris-element {
+    width: 393px;
+}
+
+.cris-element h1 {
+    font-size: 132px;
+    font-weight: 400;
+}
+.cris-element h3 {
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.cris-element a {
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 21px 11px 22px;
+
+}
+
+.first-section .cris-img {
+    width: 390px;
+}
+
+.cris-img img {
+    border-top-right-radius: 190px;
+    border-top-left-radius: 190px;
+    border: 3px solid #000;
+}
+
+.first-section .hemsworth-element {
+    width: 372px;
+}
+
+.hemsworth-element h2 {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 61px;
+    margin-bottom: 30px;
+    margin-top: 45px;
+}
+
+.hemsworth-element p {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 17px;
+    margin-bottom: 55px;
+}
+
+.hemsworth-element a {
+    padding: 10px 33px 11px 33px;
+    color: #000;
+    border: 2px solid #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* ЗАКОНЧИЛ С FIRST SECTION */
+
+
+
+
+/* НАЧИНАЕМ СЕКЦИЮ ABOUT-ME */
+
+.about-me {
+    padding-top: 70px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #000;
+    
+}
+.about-me-img {
+    padding-right: 80px;
+}
+.about-me-text {
+    padding-top: 34px;
+    width: 602px;
+}
+.about-me-text h4 {
+    font-size: 45px;
+    font-weight: 300;
+    font-style: normal;
+    
+}
+
+.about-me-text-first-hr {
+    width: 100px;
+    height: 2px;
+    background-color: #000;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.about-me-text b {
+    font-weight: 700;
+}
+
+.about-me-text p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.about-me-text h5 {
+    font-size: 35px;
+    font-weight: 300;
+    margin-top: 16px;
+}
+
+.about-me-text-second-hr {
+    width: 40px;
+    margin-bottom: 30px;
+}
+
+.about-me-text-uls ul {
+    list-style-type: none;
+}
+.about-me-text-uls {
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+.about-me-text-uls li {
+    padding-bottom: 5px;
+}
+.about-me-text-ul-fisrt {
+    margin-right: 60px;
+}
+.about-me-text a {
+    padding: 10px 33px 11px 33px;
+    color: #000;
+    border: 2px solid #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+
+}
+/* ЗАКОНЧИЛИ СЕКЦИЮ ABOUT-ME */
+
+
+
+
+/* SECTION MY-SERVICE */
+
+
+.my-services {
+    padding-top: 70px;
+    padding-bottom: 90px;
+    border-bottom: 1px solid #000;
+}
+
+.my-services h4 {
+    font-size: 45px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+
+.my-services hr {
+    width: 129px;
+    margin-left: 650px;
+    background-color: #000;
+    height: 1px;
+    border: 0;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.my-services-grid-elements {
+    display: grid;
+    grid-template-columns: repeat(3,370px);
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.my-services-grid-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #000;
+    padding: 30px;
+}
+
+.my-services-grid-element img {
+    width: 69px;
+}
+.my-services-grid-element b {
+    font-size: 30px;
+    font-weight: 300;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.my-services-grid-element p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+/* END SECTION MY-SERVICE */
+
+
+
+
+
+
+
+
+
+
+
+
+/* PORTFOLIO-SECTION */
+
+.portfolio-section {
+    padding-top: 70px;
+    padding-bottom: 90px;text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.portfolio-section h4 {
+    font-size: 45px;
+    font-weight: 300;
+}
+.portfolio-section hr {
+    width: 129px;
+    margin-left: 650px;
+    background-color: #000;
+    height: 1px;
+    border: 0;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+     
   }
+  .portfolio-item {
+    height: 400px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border: 1px solid  #000;
+  }
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+}
+  
+  .filters { 
+    text-align: center;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+  }
+  .filters-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border:none;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .filters-button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  .first-btn {
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+  .mid-btn {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+  .last-btn {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+
+.portfolio-addon {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/* END PORTFOLIO SECTION */
+
+
+
+/* CONTACT */
+
+.contact-me {
+    padding-top: 70px;
+    padding-bottom: 90px;
+    border-bottom: 1px solid #000
+}
+
+.contact-me h4 {
+    font-size: 45px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+
+.contact-me hr {
+    width: 129px;
+    margin-left: 650px;
+    background-color: #000;
+    height: 1px;
+    border: 0;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.contact-me-blocks {
+    display: flex;
+    justify-content: space-around;
+}
+.contanct-me-blocks-left-side {
+    background-color: #000;
+    color: #fff;
+    padding: 45px;
+    width: 550px;
+    box-sizing: border-box;
+}
+
+.contanct-me-blocks-left-side img {
+    border-radius: 10px;
+}
+.contanct-me-blocks-left-side h5 {
+    font-size: 35px;
+    font-weight: 500;
+    font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.contanct-me-blocks-left-side small {
+    font-weight: normal;
+    font-size: 15px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.contanct-me-blocks-left-side p {
+    font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+}
+.contanct-me-blocks-left-side a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.contact-me-blocks-rigth-side {
+    width: 550px;
+    padding: 45px;
+    box-sizing: border-box;
+    border:1px solid #000;
+}
+
+.contact-me-blocks-rigth-side form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-me-blocks-rigth-side form input,textarea {
+    padding: 15px;
+    font-size: 18px;
+    margin-bottom: 29px;
+    border: 1px solid #000;
+}
+
+.contact-me-blocks-rigth-side textarea {
+    height: 200px;
+    resize: none;
+}
+
+.contact-me-blocks-rigth-side button {
+    font-size: 15px;
+    background-color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+
+/* END CONTACT */
+
+
+
+/* FOOTER */
+
+
+.footer-content {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    
+    
+}
+.social img {
+    padding: 20px;
+    background-color: #fff;
+    margin-right: 40px;
+    width: 65px;
+    height: 65px;
+    box-sizing: border-box;
+}
+
+
+/* FOOTER END */
