@@ -11,6 +11,11 @@
      <div class="auto-mid">
         <!-- HEADER -->
     <header class="header">
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <img src="img/LOGO.svg" alt="">
         <nav>
             <ul>
@@ -31,7 +36,7 @@
     <main>
 
         <!-- first-section -->
-        <section class="first-section">
+        <!-- <section class="first-section">
             <div class="cris-element">
                 <h1>Chris</h1>
                 <h3>Profeshonal UI/UX
@@ -47,12 +52,12 @@
                     molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum</p>
                 <a href="#">About me</a>
             </div>
-        </section>
+        </section> -->
         <!-- end first-section -->
 
 
         <!-- SECTION ABOUT-ME -->
-        <section class="about-me">
+        <!-- <section class="about-me">
             <div id="about-me" class="about-me-img">
                 <img src="img/about-cris.jpg" alt="">
             </div>
@@ -87,11 +92,11 @@
                 </div>
                 <a href="#">Contact me</a>
             </div>
-        </section>
+        </section> -->
         <!-- END SECTION ABOUT-ME -->
 
         <!-- SECTION MY-SERVICES -->
-        <section class="my-services">
+        <!-- <section class="my-services">
             <h4>My Services</h4>
             <hr>
             <div id="service" class="my-services-grid-elements">
@@ -126,12 +131,12 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. MaximeLorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- END SECTION MY-SERVICES -->
 
 
         <!-- SECTION PORTFOLIO -->
-        <section id="portfolio" class="portfolio-section">
+        <!-- <section id="portfolio" class="portfolio-section">
             <h4>Portfolio</h4>
             <hr>
             <div class="portfolio-addon">
@@ -152,13 +157,13 @@
                     <div class="portfolio-item" data-category="web-app">Веб-приложение-5</div>
                   </div>
             </div>
-        </section>
+        </section> -->
         <!-- END SECTION PORTFOLIO -->
 
 
 
         <!-- SECTION CONTACT-ME -->
-        <section id="contact" class="contact-me">
+        <!-- <section id="contact" class="contact-me">
             <h4>Contact Me</h4>
             <hr>
             <div class="contact-me-blocks">
@@ -180,7 +185,7 @@
                     </form>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- END SECTION CONTACT ME -->
 
         
@@ -189,7 +194,7 @@
 
 
     <!-- FOOTER -->
-    <footer>
+    <!-- <footer>
         <div class="footer-content">
             <div class="social">
                 <img src="img/fb.svg" alt="">
@@ -201,9 +206,17 @@
                 <p>©2022 All rights reserved by - Morsalin Nur</p>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- END FOOTER -->
      </div>
+
+
+     <script>
+        document.querySelector('.burger-menu').addEventListener('click',function() {
+    this.classList.toggle('open');
+    document.querySelector('.header').classList.toggle('open')
+})
+     </script>
 
      <script>
         const anchors = document.querySelectorAll('a[href*="#"]')
