@@ -680,6 +680,52 @@ body {
         margin-top: 20px;
     }
 
+    /* END ABOUT-section-media */
+
+
+
+    /* start my-services-media */
+
+    .my-services {
+        padding: 40px 20px;
+
+    }
+
+    .my-services h4 {
+        font-size: 32px;
+    }
+
+    .my-services hr {
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+    }
+
+    .my-services-grid-elements {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .my-services-grid-element {
+        padding: 20px;
+    }
+
+    .my-services-grid-element img {
+        width: 50px;
+    }
+
+    .my-services-grid-element b {
+        font-size: 24px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .my-services-grid-element p {
+        font-size: 14px;
+    }
+    /* end my-services-media */
 
 
 
