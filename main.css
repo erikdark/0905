@@ -767,6 +767,9 @@ body {
 
     /* end portfolio-media */
 
+
+    /* start contact-media */
+
     .contact-me {
         padding: 40px 20px;
 
@@ -816,5 +819,33 @@ body {
 
     .contanct-me-blocks-left-side img {
         width: 100%;
+    }
+
+    /* end contact-media */
+
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .social {
+        margin-bottom: 20px;
+
+    }
+
+    .social img {
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .social p {
+        font-size: 14px;
+    }
+
+    .social img:last-child {
+        margin-right: 0;
     }
 }
