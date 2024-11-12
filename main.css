@@ -765,5 +765,56 @@ body {
         padding: 8px 16px;
     }
 
-    
+    /* end portfolio-media */
+
+    .contact-me {
+        padding: 40px 20px;
+
+    }
+
+    .contact-me h4 {
+        font-size: 32px;
+    }
+
+    .contact-me hr {
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .contact-me-blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-me-blocks-rigth-side,
+    .contanct-me-blocks-left-side {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contanct-me-blocks-left-side h5 {
+        font-size: 28px;
+    }
+
+    .contanct-me-blocks-left-side p {
+        font-size: 16px;
+    }
+
+    .contact-me-blocks-rigth-side form input,
+    .contact-me-blocks-rigth-side form textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .contact-me-blocks-rigth-side button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .contanct-me-blocks-left-side img {
+        width: 100%;
+    }
 }
