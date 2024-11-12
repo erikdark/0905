@@ -728,7 +728,42 @@ body {
     /* end my-services-media */
 
 
+    /* start portfolio-media */
 
+    .portfolio-section {
+        padding: 40px 20px;
+    }
+
+    .portfolio-section h4 {
+        font-size: 32px;
+    }
+
+    .portfolio-section hr {
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .portfolio {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .portfolio-item {
+        height: 300px;
+        font-size: 18px;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: 10px
+    }
+
+    .filters-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
 
     
 }
